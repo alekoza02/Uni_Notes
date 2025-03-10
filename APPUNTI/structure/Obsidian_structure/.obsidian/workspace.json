@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "62a776434382e706",
+    "id": "5c6e2f3058b1d483",
     "type": "split",
     "children": [
       {
-        "id": "297e08911152536c",
+        "id": "a6b62ed67704b766",
         "type": "tabs",
         "children": [
           {
-            "id": "ecd2862d97a3df49",
+            "id": "2273442ebee332ff",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "e278451ee6bd6d47",
+    "id": "8022cf9cf4830466",
     "type": "split",
     "children": [
       {
-        "id": "ee1a391da7f3dff9",
+        "id": "a9a479f604c5665b",
         "type": "tabs",
         "children": [
           {
-            "id": "3e63217d32f8e9aa",
+            "id": "4b99c2a54698a27f",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -48,7 +48,7 @@
             }
           },
           {
-            "id": "171948017d5b6995",
+            "id": "af56d7957ca3344b",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,7 +65,7 @@
             }
           },
           {
-            "id": "87c36d2a18c338af",
+            "id": "77fa1b1d6681bcfe",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -78,22 +78,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
-    "id": "743edf582e4f0314",
+    "id": "a9e48d782bb61e82",
     "type": "split",
     "children": [
       {
-        "id": "ef033c7aa02b184b",
+        "id": "085ed983fed843d6",
         "type": "tabs",
         "children": [
           {
-            "id": "6a124ee82e611b88",
+            "id": "ba51d6f8a1ed5820",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Lecture 1- 10-03-25.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,24 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Lecture 1- 10-03-25"
             }
           },
           {
-            "id": "0fdf32b58b772293",
+            "id": "437434e8ed6f84f6",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Lecture 1- 10-03-25.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Lecture 1- 10-03-25"
             }
           },
           {
-            "id": "52fe0feffc71a51d",
+            "id": "0e1b27f86389756c",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -135,17 +137,18 @@
             }
           },
           {
-            "id": "59f118d7bfe2c24c",
+            "id": "00c5bd070bae54c6",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
+                "file": "Lecture 1- 10-03-25.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Lecture 1- 10-03-25"
             }
           }
         ]
@@ -165,19 +168,8 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ecd2862d97a3df49",
+  "active": "2273442ebee332ff",
   "lastOpenFiles": [
-    "Pasted image 20250310125540.png",
-    "Pasted image 20250310124802.png",
-    "Pasted image 20250310124505.png",
-    "Pasted image 20250310124336.png",
-    "Pasted image 20250310123937.png",
-    "Pasted image 20250310122736.png",
-    "Pasted image 20250310122704.png",
-    "Pasted image 20250310122259.png",
-    "Pasted image 20250310121943.png",
-    "Pasted image 20250310121617.png",
-    "Pasted image 20250310120924.png",
     "Lecture 1- 10-03-25.md"
   ]
 }
