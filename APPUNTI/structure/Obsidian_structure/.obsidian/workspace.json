@@ -11,14 +11,10 @@
             "id": "2273442ebee332ff",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Lecture 1- 10-03-25.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Lecture 1- 10-03-25"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ]
@@ -170,6 +166,12 @@
   },
   "active": "2273442ebee332ff",
   "lastOpenFiles": [
-    "Lecture 1- 10-03-25.md"
+    "Lecture 1- 10-03-25.md",
+    "01_4.jpg",
+    "01_5.jpg",
+    "01_6.jpg",
+    "01_3.jpg",
+    "01_2.jpg",
+    "01_1.jpg"
   ]
 }
