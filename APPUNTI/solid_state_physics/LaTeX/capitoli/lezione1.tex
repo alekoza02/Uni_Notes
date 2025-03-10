@@ -1,0 +1,73 @@
+\section{10-03-25: | Introduction}
+
+\subsection{Correction of the test}
+
+\paragraph{Linearly polarized light:} 
+\begin{equation}
+    \vec{\mathcal{E}} = \mathcal{E}_0 \hat{e}_x \cos(\omega t)
+\end{equation}
+Remember that the $\vec{B}$ and $\vec{\mathcal{E}}$ fields are $\perp$. We can obtain the value of the speed of light as:
+\begin{equation}
+    c = \frac{1}{\sqrt{\mu_0 \varepsilon_0}}
+\end{equation}
+Since we want to consider a linearly polarized plane, we consider the 1D case. We can then derive all informations about the period, frequency and pulse.
+
+\paragraph{Band diagram of a crystal:} We have regions where some energies are permitted and others where they are prohibited. The difference in the prohibited regions generate the difference between metals, semiconductors and insulators. The band diagram is a function of the crystal structure.
+
+\begin{itemize}
+    \item Metals: valence band occupied at lowest energy.
+    \item Semiconducotrs: valence band not occupied at lowest energy, and there is a small gap between the valence and conduction bands.
+    \item Insulators: valence band not occupied at lowest energy, and there is a large gap between the valence and conduction bands.
+\end{itemize}
+
+\noindent The energy gap is the difference between the valence and conduction bands. From the following equation we can obtain the value of the enrgy gap:
+\begin{equation}
+    E_T = k_B T \simeq 0.026 \text{eV (@ 300K)} 
+\end{equation}
+Between 1 and 3 eV we have the energy gap for semiconductors, while for insulators it is greater than 3 eV. Remember that the probability follows:
+\begin{equation}
+    \text{prob.} \propto e^{k_BT / E_g}
+\end{equation}
+This means that the definition of semiconductor or not depends on the temperature.
+
+\paragraph{What is a photon:} A photon is a wave-particle duality. And we can obtain its energy from the following equation:
+\begin{equation}
+    E = h \nu = \frac{hc}{\lambda} = \frac{1240}{\lambda} \text{eV}
+\end{equation}
+Another important information is its momentum:
+\begin{equation}
+    p = \hbar \hat{k}
+\end{equation}
+
+\paragraph{What is a phonon:} A phonon is a quantized vibration of the crystal lattice (elementary quantum of lattice vibration). It is a wave-particle duality. The energy of an individual phonon is:
+\begin{equation}
+    E = \hbar \Omega = E_{\Omega, n} = \left(\frac{1}{2} + n\right)\hbar \Omega\text{, }n \in \mathbb{N}
+\end{equation}
+The phonon density is given by:
+\begin{equation}
+    \rho_{\Omega} \propto \frac{1}{\exp\left[\frac{\hbar\Omega}{KT}\right] - 1}
+\end{equation}
+
+\paragraph{Snell's law:} The refraction index is the relative speed of light in a medium. The refraction index is given by:
+\begin{equation}
+    n = \frac{c}{v}
+\end{equation}
+If we want to now how much the light is refracted, we can use Snell's law:
+\begin{equation}
+    n_1 \sin(\theta_1) = n_2 \sin(\theta_2)
+\end{equation}
+
+\paragraph{Quantum states superposition:} Let's consider a system that can be in many different states. The total wavefunction is given by:
+\begin{equation}
+    \ket{\Psi} = \sum_{i=1}^{N} c_i \ket{\psi_i}
+\end{equation}
+
+\paragraph{Photon absorbtion:} This phenomenon depends mostly on the energy of the photon and the energy gap of the material $(h\nu \geq E_g)$.
+
+\paragraph{P-type semiconductor:} We have acceptors creating new energy levels in the forbidden gap. The acceptors are positive ions. The energy levels are close to the valence band, effectively lowering the band gap. If I call $N_a$ the number of acceptors, the hole density is $\rho \simeq N_a$ and most importantely $p >> n$.
+
+\paragraph{Ohm's law (Macro \& Micro):} The current is given by:
+\begin{equation}
+    I = \frac{V}{R}
+\end{equation}
+In microscopic terms, the current is given by the Drude's model.

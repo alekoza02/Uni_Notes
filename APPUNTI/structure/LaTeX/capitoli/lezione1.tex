@@ -1,0 +1,106 @@
+\section{10-03-25: | Introduction}
+Crystals are ordered structures. Let's start from 2D crystals. The elementary cell is the smallest space we can consider to include all the features of the cell and by just applying traslation we can obtain the whole crystal. We can use vectors like $\vec{a}$ and $\vec{b}$ to represent all the possible location of atoms in the elementary cell. They are called \textbf{Lattice Vectors}.
+
+\paragraph{Lattice traslation vectors:} They are linear combinations of $\vec{a}$, $\vec{b}$ and so on:
+\begin{equation}
+    \vec{v} = n\vec{a} + m\vec{b} + p\vec{c}
+\end{equation}
+Where $n$, $m$ and so on are integers, they identify all the origins of the elementary cells.
+This means that by identifying a certain feature in the elementary cell and applying the Lattice Traslation Vectors we find the same feature in another elementary cell, which leads to the \textbf{Lattice Traslation Invariance}, defined as:
+
+\begin{equation}
+    \Phi(\vec{x}) = \Phi(\vec{x} + \vec{T})
+\end{equation}
+All crystals MUST satisfy this property.
+
+\paragraph{Crystal site:} We can think about the crystal as a series of potential wells, where atoms are located. Once we accept this view, the actual atom inside the well, is not very important, the important thing is the position, so we can obtain a solid solution as a mixture. So we desribe the well as the probability of a site being occupied from an element or another. This is called occupancy of a site.
+
+\subsection{Radiation diffusion}
+During scattering processes, we can have different behaviours:
+\begin{itemize}
+    \item Inelastic, meaning that $E_f \neq E_i$.
+    \item Elastic, meaning that $E_f = E_i$ (most frequent and subject of the course).
+\end{itemize}
+We need to introduce momentum as:
+\begin{equation}
+    \vec{K_i} = \frac{2\pi}{\lambda_i}\vec{\tau_i} = \frac{\vec{\tau_i}}{\lambda_i}
+\end{equation}
+Where $\vec{\tau_i}$ has modulus 1 and direction of the incident ray, while $\vec{\tau_f}$ is always 1, but in the direction of the scattered direction. The momentum transfer is $\vec{Q} = \vec{K_f} - \vec{K_i}$, which will be 100\% in case of elastic scattering.
+
+\paragraph{De broglie:} We can use photons, which have the following relation with energy. This is done to show that we can use pretty much everything that interact with the sample.
+\begin{equation}
+    P\lambda = h
+\end{equation}
+\begin{equation}
+    e = \frac{hc}{\lambda}
+\end{equation}
+
+\noindent So now we are interested in how we can express the probability of a certain scattering transition. We want to know the direction and intensity change. As always, probability will be given by:
+\begin{equation}
+    \int_{\text{crystal}} \Psi_i^*(\vec{x}) I(\vec{x}) \Psi_s dV \rightarrow |\braket{i|I|f}|^2
+\end{equation}
+How can we describe the interaction?
+
+\paragraph{Electron density:}
+\begin{equation}
+    \rho(\vec{x})dV = \delta n_e
+\end{equation}
+
+\paragraph{Larmor Formula:} Aimed to describe how a particle behave when struck from an ELM wave. The power irradiated from the particle once it was moved from the wave is:
+\begin{equation}
+    P \propto q^2\vec{a}^2
+\end{equation}
+Where $a$ is the acceleration. So what happens to a small Power?
+\begin{equation}
+    \delta P \propto \partial q^2 \vec{a}^2
+\end{equation}
+\begin{equation}
+    \vec{a} = \frac{\vec{F}}{m} = \frac{\vec{E} \delta q}{\delta m}
+\end{equation}
+\begin{equation}
+    \frac{\delta q}{\delta m} = \frac{e\delta n}{m_e \delta n} = \frac{e}{m_e}
+\end{equation}
+\begin{equation}
+    \delta P \propto \rho(\vec{x})^2 dv dv
+\end{equation}
+This means the the power or radiation will be bounded to the probability that the radiation will interact with the sample.
+\begin{equation}
+    P \leftrightarrow \sum_{\vec{K_f}}P_{\vec{K_i} \rightarrow \vec{K_f}}
+\end{equation}
+So in the Eq.6 we can subsitute the I with the $\rho(\vec{x})$.
+
+\subsection{Description of the Wavefunctions}
+
+Let's start from a simple plane wave.
+\begin{itemize}
+    \item Starting incident radiation:
+    \begin{equation}
+        e^{2\pi i \vec{k_i}\vec{x}-i\omega t}
+    \end{equation}
+    \item Exiting scattered radiation:
+    \begin{equation}
+        e^{2\pi i \vec{k_f}\vec{x}-i\omega t}
+    \end{equation}
+\end{itemize}
+So the final expression is:
+\begin{equation}
+    P_{\vec{K_i} \rightarrow \vec{K_f}} \propto \left|\int \rho_{\vec{x}} e^{2\pi i \vec{Q} \vec{x}}dV\right|^2
+\end{equation}
+
+\paragraph{Nodes:} We can collapse an entire elementary cell into a node, a geometrical point that will contain the information of the position of the elementary cell in the space. This helps us, because we can rewrite our $\sum$ as a summation of nodes, where each node will have always the same term inside of it. So we'll need to add an additional $\vec{x}$ which will position us in the correct spot inside the elementary cell. Remember that $d\vec{y}$ means integration over the elementary cell. But this means that we no longer need all the terms that traslate us between elementary cells, we already calculated what is their value.
+
+\subsection{Fourier transform \& Bragg's law}
+
+\begin{equation}
+    |\vec{K_f}| = |\vec{K_i}| = \frac{1}{\lambda}
+\end{equation}
+If the line connecting the incident and scattered vector were connected, their module would be $Q$, so:
+\begin{equation}
+    \frac{|\vec{Q|}}{2} = \frac{1}{\lambda}\sin(\theta)
+\end{equation}
+Which is essentially the Bragg's law, stating that there's a limit angle during scattering and there's a max lenght of the vector Q:
+\begin{equation}
+    |\vec{Q}| \leq \frac{2}{\lambda}
+\end{equation}
+
+\paragraph{Monochromatic source:} Until now we have supposed that the incident beam is characterized by just one wavelength (monochromatic condition). All our discussions will be in the frame of this setup, but it is not the only possible experimental configuration.

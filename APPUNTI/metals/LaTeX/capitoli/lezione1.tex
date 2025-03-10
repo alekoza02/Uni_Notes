@@ -1,0 +1,110 @@
+\section{10-03-25: | Introduction}
+
+\paragraph{Pre-requisites:}
+It's important to understand the \textbf{phase transformations} in alloys under developement.
+We'll also focus on the \textbf{quantitative treatments} and most importantly on the \textbf{sustainability} of the metals production.
+
+We should already know the atomic structure of metals, crystalline structures, dislocations, boundaries, and other defects. We need to know how to read and understand a phase diagram. Also we need to know the basic principles of thermodynamics and kinetics. Like for example diffusion, concentration gradient, flux and so on.
+
+\subsection{Thermodynamics and phase diagrams:} 
+Some terminology:
+\begin{itemize}
+    \item Component: element of the periodic table or compound.
+    \item Phase: portion of a system that has uniform physical and chemical characteristics.
+    \item System: mixture of one or more phases.
+\end{itemize}
+Some thermodynamic properties:
+\begin{itemize}
+    \item Temperature
+    \item Pressure
+    \item Composition
+\end{itemize}
+The stability of the system is given from the \textbf{Gibbs free energy} $G$:
+\begin{equation}
+    G = H - TS
+\end{equation}
+This is the most useful equation, because we can actually control both T and P. In this course we will assume that the variations of P are small, so we consider it constant. 
+
+Thermodynamic quantities are extensive quantities, so they depend on the amount of material. We can define the \textbf{molar Gibbs free energy} $g$ as:
+\begin{equation}
+    G_{m} = \frac{G}{N}
+\end{equation}
+In the case it contains more phases, G total will be the sum:
+\begin{equation}
+    G = \sum_{\varphi} N_{\varphi}G^{\varphi}
+\end{equation}
+The composition in described as a molar fraction of the total (all expressed in moles):
+\begin{equation}
+    x_{\varphi} = \frac{N_{\varphi}}{N_{tot}}
+\end{equation}
+Moreover, the equilibrium is reached when the Gibbs free energy is minimized. This means that we can find it by finding a local minima (metastable) or a global minima (stable):
+\begin{equation}
+    dG = 0 \text{, and } d^2G \geq 0
+\end{equation}
+Interestingly, we never know the actual integral value of G, we always work with differences of it, unless we define a reference state.
+
+\paragraph{Reference state:} Don't think is very relevant, but in case you want to investigate further: \textit{Thermodynamics and free energy curves.pptx, slide 7}.
+
+\paragraph{Single component systems (pure metals):} We can consider a system made out of a single element, constant pressure. For each phase we can define the Gibbs free energy. But how can I obtain valuable information from this? I can just change T, and rewrite calculating H and S.
+\begin{equation}
+    H = H_{\text{ref}} + \int_{T_{\text{ref}}}^{T} C_{p}dT \text{, with } C_p = \left(\frac{\partial H}{\partial T}\right)_P
+\end{equation}
+\begin{equation}
+    S = S_{\text{ref}} + \int_{T_{\text{ref}}}^{T} C_{p}d\ln T \text{, with } C_p = \left(\frac{\partial S}{\partial T}\right)_P 
+\end{equation}
+Where we will need to obtain the values of different $c$ using fitting of real data.
+So recap: we fit the data obtaining $c$, then we calculate S and H and then we obtain the amount of G at different T.
+
+These plots have T on the X-axis and $C_p$ on the Y-axis (there's a small digression on the magnetic behaviour of Iron and a big spike in the plot).
+
+If we for example plot the total Gibbs energy and the T, we get that some crystalline structures are more stable than others at different temperatures.
+
+\paragraph{Coordinate system:}
+The plots can be plotted assuming the reference state as the \textbf{BCC} at every temperature with pressure 1bar. Remember by the way that each one of the plots with changing temperature, is just a slice, one line of the full diagram phase T and P.
+
+\paragraph{DoF:} Remember that the number of degrees of freedom is:
+\begin{equation}
+    \nu = c - f + 2
+\end{equation}
+
+\subsection{Driving force of solidification}
+
+By comparing different Gibbs energies at different temperatures of the liquid and solid phase, we obtain the melting point. However, under certain conditions (fast cooling), the solidification happens at a couple hundred degrees lower. The bigger is the difference between the Gibbs energies, the bigger is the driving force (the energy gain) of the transition. The different differences, are obtained from the calculations between solid and liquid phases.
+
+Remember that usually the $\Delta H$ is called $L$ as in \textit{Latent heat of fusion}.
+
+\subsection{Binary systems}
+
+Alloys made of 2 different components. We have two different possibilities:
+\begin{itemize}
+    \item Same crystal structure: Homogeneous, because of substitutional solid solution.
+    \item Not same crystal structure: Heterogenous, because both can create substitutional solid solutions inside the other and not mix.
+\end{itemize}
+Other cases:
+\begin{itemize}
+    \item Interstitial solid solutions
+    \item Different phase, which has a crystal structure that is not A nor B.
+\end{itemize}
+
+\noindent Either way, the new plot of rappresentation is a plot that has the Gibbs energy (T and P constant) on the Y-axis and the percentage of composition on the X-axis. At each end of the plot we have a 100\% of the given component. The attributes of the mix and the single components is the \textit{'linear interpolation'}, but I guess that in future the true behaviour will not be a straight line.
+
+\paragraph{Entropy of mixing:} Using:
+\begin{equation}
+    S = k_B \ln(\omega_{\text{conf}})
+\end{equation}
+Where we can describe the amount of entropy as the number of different configurations a system can assume. Before mixing we had only 1 configuration of atoms in different position (atoms of the same element are indistinguishible), while after mixing we have different possible configurations and thus a higher entropy. The value of $\omega$ is:
+\begin{equation}
+    \omega_{\text{config}} = \frac{(N_A + N_B)!}{N_A!N_B!}
+\end{equation}
+With the different N are the number of atoms of different elements: 
+\begin{equation}
+    N_A = X_A N_a
+\end{equation}
+
+\paragraph{Sterling's equation:} SKIP, it is an approx.: $\ln(N) \sim N\ln(N) - N$ 
+
+So now we have all the data to calculate the $\Delta S$:
+
+\begin{equation}
+    \Delta S_{mix} = S_2 = k_B\ln(\omega_{\text{conf}}) = -R(X_A\ln(X_A) + X_B\ln(X_B))
+\end{equation}
