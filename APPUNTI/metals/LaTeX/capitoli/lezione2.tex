@@ -1,0 +1,41 @@
+\section{11-03-25: | Binary systems}
+
+The real case is different from the ideal one, in fact, the $\Delta G_{\text{mix}}$ strongly depends on the temperature, with higher energies we obtain higher differences. Remember that it is always negative in the ideal case. Mixing is always thermodynamically favorable.
+
+But to obtain this type of ideal solution we must use specific alloys, so we need to add complexity to the model, to better simulate real data: Regular Solution Model.
+
+\subsection{Regular Solution Model}
+
+We first of all assume that the bonding energies do not change with the composition, and P \& V remain constant when mixing (this is expressed by the relation: $\Delta U = \Delta H$).
+We also assume that the the bonding energies between different atoms are fixed:
+\begin{itemize}
+    \item A-A bonds with energy $\varepsilon_{AA}$
+    \item B-B bonds with energy $\varepsilon_{BB}$
+    \item A-B bonds with energy $\varepsilon_{AB}$
+\end{itemize} 
+This simplify a little the calcs, because:
+\begin{equation}
+    \Delta H = \Delta E + \cancel{\Delta(PV)}
+\end{equation}
+There are also formulas to get the number of atoms from the number of bonds and viceversa, skipped.
+
+Now follows a demonstration of the calculation of internal energy after mixing, which mainly considers the 2 original values and correlates it to the number of bonds, essentially summating them all over. More information \textit{1 - Thermodynamics and free energy curves2.pdf @ pag.20}.
+
+The final result is this:
+\begin{equation}
+    \Omega = N_az\varepsilon
+\end{equation}
+\begin{equation}
+    \Delta H_{\text{mix}} = \Omega X_A X_B
+\end{equation}
+We can have different combinations of high/low temperature and $\Omega \lessgtr 0$. This illustrates how actually the $\Delta H$ might not be negative, meaning it is not thermodynamically favorable. The sign depends on wether the bonds between same atoms is tronger or weaker compared to bonds between different atoms. The void zone is called \textbf{Miscibility gap}. This gap is always present, even if the $\Delta H$ is negative, this is beacause, there always states more favorable (energetically). 
+
+\subsection{Chemical potential}
+
+This tells us how much chemical potential energy a pure element has and how much it lowers whenever creating a solution: usually the solution will have the lowest free energy. This chemical energy is related to the crystal structure, so like the energy contained in the element.
+
+\vspace{15pt}
+
+\noindent If we mix 2 components which have different crystal structure, the situtation becomes even more complicated, we must consider \textit{'how much a certain component in a certain crystal structure is stable in the OTHER crystal structure'}. We then obtain 2 different curves, each one describing one or the other free energy for every crystal structure considered. Whenever this happens it results more convienient to have BOTH phases together, so both minima. To understand the amount of one phase respect to the other we can use the \textit{'Legge della Leva'}. $\sim$ Rizzi
+
+The tangent line used passes through the 2 minima, and we project our composition down the line. This is applied only inside the miscibility gap, outside it follows the free energy curve.
