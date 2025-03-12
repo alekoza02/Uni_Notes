@@ -1,0 +1,91 @@
+\section{12-03-25: | Tight binding model (Rigid Spheres)}
+
+\paragraph{Introduction:}It's a formal way to describe the Band structure of crystals using a quantum mechanical approach. We can define a wavefunction for an electron bounded to the wavefunction (orbitals).
+\begin{equation}
+    \hat{H}_{at} \ket{\Psi} = E_0 \ket{\Psi}
+\end{equation}
+Next we move from a single atom to the periodic lattice.
+
+\paragraph{Atomic radius:} This can be considered the first thing that changes when using different elements. Consequentially the interatomic distance changes. We can use the rigid sphere model, where the sum of 2 radii gives us the interatomic distance. Since usually all the distances are expressed as chemical bonds, we will have the following type of radii, based on the bond nature:
+\begin{itemize}
+    \item Ionic Radius (NaCl)
+    \item Covalent Radius (Si, Ge)
+    \item Metallic Radius (Metallic Na)
+    \item Van der Waals Radius 
+\end{itemize}
+
+\paragraph{Na example:}
+Na values for different radii are 154pm for ionic and 186pm for metallic, which has a difference $\sim 20\%$. So the choice strongly depends on the usage.
+
+If we consider the electronic configuration we have $[Na] = (1S)^2(2S)^2(2P)^6(3S)^1$, which are 4 different wavefunctions. We can also consider the Hamiltonian as:
+
+\begin{equation}
+    \hat{H} = \hat{T} + \hat{V}(x)
+\end{equation}
+\begin{equation}
+    \hat{T} = \frac{\hat{p}^2}{2m}
+\end{equation}
+\begin{equation}
+    \hat{V}(x) = -\frac{1}{4\pi\varepsilon}\frac{Ze^2}{x}
+\end{equation}
+While the $\Psi$ is considered as a product of a Radial component and Angular component:
+\begin{equation}
+    \Psi(\vec{x}) = R_{n,l}(r) \cdot Y_{l,m}(\theta, \phi)
+\end{equation}
+Additionally we replace the value of the radius with a new term $\rho$ which is related to the Hydrogen radius ($a_0$ is the Bohr radius $\sim 53$pm). Just to have more relative values:
+\begin{equation}
+    r \rightarrow \rho = \frac{r}{a_0}
+\end{equation}
+From the notes we can note that we have essentially 2 different classes of electrons: localized and not localized (core and valence), this is because by plotting the Radial probability we see how the most external electrons are way out the ionic radius, so we can consider them as a 'lattice electron'. We can then divide the orbitals into 'core', 'valence' and 'lattice'. In addition we consider that $\Psi$ are different superpositions of orbitals wavefunctions.
+
+\begin{equation}
+    \ket{\Psi} \rightarrow \ket{\varphi}
+\end{equation}
+Where the $\varphi$ is a repetition of $\Psi$ that create the crystal structure. We can see that the different $\Psi$ are overlapping between each other. And each $\Psi$ is just traslated in space:
+\begin{equation}
+    \ket{\Psi_i} = \ket{\Psi(x = x_i)}
+\end{equation}
+
+\paragraph{Overlapping, bonding and anti-bonding:} In the overlapped $\Psi$ we can have a bonding or anti-bonding configuration of electrons. If this is taken to infinity we generate bands. We recover the LCAO model, generalizing $\ket{\varphi}$ as a linear combination of $\ket{\Psi}$:
+
+\begin{equation}
+    \ket{\varphi(x)} = \underbrace{\frac{1}{A}}_{\text{normalization}}\cdot \sum_{i=1}^{N} \underbrace{c_i}_{\text{weights}} \ket{\Psi(x-x_i)}
+\end{equation}
+If in this simple example we have identical atoms, $|c_i|^2 = 1; \forall i$. Limit cases: maximally symmetric with $c_i = 1; \forall i$ and $c_i = (-1)^i; \forall i$ which is the maximally antisymmetric case.
+\begin{equation}
+    \ket{\varphi_+(x)} = \frac{1}{A} \sum_{i=1}^{N} \ket{\Psi(x-x_i)}
+\end{equation}
+\begin{equation}
+    \ket{\varphi_-(x)} = \frac{1}{A} (-1)^i \sum_{i=1}^{N} \ket{\Psi(x-x_i)}
+\end{equation}
+To interpolate between them we will use $c_j$ which is a phase defined as $e^{i\phi_j}$ where $\phi_j$ ranges between $0$ and $j\pi$.
+
+\paragraph{Potential:} We can also describe how consequentially the potential changes: 
+\begin{equation}
+    V_{\text{at}} \propto - \frac{1}{x}
+\end{equation}
+And with infinity of these equation we have overlaps, so we actually see the sum of all of them. (they go lower and smoother because values are negative). So how do we write the $\hat{H}_{\text{crystal}}$? 
+\begin{equation}
+    \hat{H}_{\text{crystal}} = \hat{T} + \hat{V}_{\text{crystal}}
+\end{equation}
+\begin{equation}
+    \hat{V}_{\text{crystal}} = \hat{V}_{\text{crystal}} + \underbrace{\left[ \sum_{i=1}^N \hat{V}_{\text{at}}(x - x_i) - \sum_{i=1}^N \hat{V}_{\text{at}}(x - x_i) \right]}_{= 0}
+\end{equation}
+This means that we can actually rewrite it as:
+\begin{equation}
+    \hat{H}_{\text{single}} = \underbrace{\frac{p^2}{2m} + \sum_{i=1}^{N}\hat{V}_{\text{at}}(x-x_i)}_{\text{Isolated}} + \underbrace{\left[ \hat{V}_{\text{crystal}} (x - x_i) - \sum_{i=1}^N \hat{V}_{\text{at}}(x - x_i) \right]}_{\hat{V}_{\text{Perturbation}}}
+\end{equation}
+So essentially we are considering the fact that the crystal exist and exchanges some energy as a perturbation of the isolated atom, which can be seen as a veery slow correction term that looks like a small sine negative wave. (look at Obsidian images) which has its maximum in the interatomic space (max distance between atoms). Of course the infinite limit goes like this:
+\begin{equation}
+    \lim_{d \rightarrow \infty} \hat{V}_{\text{pert}}(x, d) = 0
+\end{equation}
+What happens when we switch again to the linear combination $\ket{\varphi}$? Well, $\ket{\varphi}$ is an eigenfunction of the Hamiltonian of the crystal, so it gives us the possibility to collapse it perfectly into the corresponding eigenvalue, which we couldn't do with the $\ket{\Psi}$, since being the isolated atom, it couldn't resolve the crystal perturbation:
+\begin{equation}
+    \text{Eigenvalue} = (E_0 + \Delta E)
+\end{equation}
+\begin{equation}
+    \Delta E = \int\braket{\varphi(x) | \hat{V}_{\text{pert.}} | \varphi(x)}
+\end{equation}
+\begin{equation}
+    \frac{\Delta E}{E_0} \ll 1
+\end{equation}
