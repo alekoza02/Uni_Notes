@@ -1,0 +1,74 @@
+\section{17-03-25: | Direct \& Indirect band gap}
+
+In the indirect energy gap the jump is not straight, or more correctly, there's a change in the momentum of the electron, which will change its position. The momentum is calcualted as:
+\begin{equation}
+    p_{\gamma} = \hbar\vec{\chi} \quad \longrightarrow \quad \chi = \frac{2\pi}{\lambda}
+\end{equation}
+This means that the photon is not carrying enough momentum to make the transition happen (3-4 orders of magnitude off). It's only enough to make the promotion, but not enough to move it.
+
+\paragraph{Phonons:} These are the answer to the momentum check. According to the conservation of energy we must have:
+\begin{itemize}
+    \item $E_i + h\nu + \cancel{\hbar\Omega} = E_f$, meaning that the initial energy + photon's energy + phonon's energy gives us the final energy.
+    \item $\hbar k_i + \cancel{\hbar \chi} + \hbar K = \hbar k_f$, meaning that the initial wave vector + the phonon's momentum (we can neglect the photon's momentum).
+\end{itemize} 
+The energy of a phonon is:
+\begin{equation}
+    \hbar \Omega = hc \;\; \Delta \left(\frac{1}{\lambda}\right) \sim 10^{-2}eV
+\end{equation}
+Which is negligible in the energy calculation. See it like this: photons are very high frequency (high energy) but very small (low momentum), the phonons on the other hand are very low frequency (low energy) but big particles (high momentum).
+Since they have a small frequency, it's easy to find a phonon which vibrates at the right (low) frequency to get the right energy and jump, making the prohibited transition happen.
+
+\subsection{Electro-Magnetic fields in materials}
+
+We will focus on electric changes through interactions. We will have \textit{elastic} and \textit{inelastic} interactions. Most of them will be considered as dipoles.
+For example we can start with:
+\paragraph{Coulomb's law:} It describes the interaction between two charges (in void).
+\begin{equation}       
+    \vec{F} = \frac{q_1q_2}{4\pi\varepsilon_0 r^2}\hat{r}
+\end{equation}
+The $\varepsilon_0$ refers to vacuum, so in a material we will have a different magnitude of the force. Additionally the electric field associated to a charge is:
+\begin{equation}
+    \vec{\mathcal{E}}_1 = \frac{q_1}{4\pi\varepsilon_0 r^2}\hat{r} \rightarrow \vec{F} = q_2 \vec{\mathcal{E}}_1
+\end{equation}
+\begin{equation}
+-\nabla V = \vec{\mathcal{E}}
+\end{equation}
+General writing:
+\begin{equation}
+    \vec{\nabla} \vec{\mathcal{E}} = \frac{\rho}{\varepsilon_0}
+\end{equation}
+And remember, $\vec{\mathcal{E}}$ has its source from the + and sinks into the -.
+
+\paragraph{Dipoles:} We will not focus on understanding why and how some things happens, but remember that dipoles create EMW when oscillating and charges generate a EMW when moving (each of them have their associated equations).
+
+\paragraph{Maxwell's equations:} Quick recap of the equations, we will use them in the future to explain some behaviours in the materials. Also we saw how they are interlinked.
+\begin{itemize}
+    \item $\nabla \cdot \mathcal{E} = \frac{\rho}{\varepsilon_0}$
+    \item $\nabla \cdot B = 0$
+    \item $\nabla \wedge \vec{B} = \mu_0 \vec{j} + \mu_0 \varepsilon_0 \frac{\partial \mathcal{E}}{\partial t}$
+    \item $\nabla \wedge \mathcal{E} = -\frac{\partial \vec{B}}{\partial t}$
+\end{itemize}
+Combaining them we can obtain this bad boy, that relates everything with everything:
+\begin{equation}
+    \nabla^2 \mathcal{E} = \frac{1}{c^2} \frac{\partial^2\mathcal{E}}{dt^2} \qquad \mu_0\varepsilon_0 = \frac{1}{c^2}
+\end{equation}
+
+\paragraph{Displacement field:} It's introduced as $\vec{D} = \varepsilon \vec{\mathcal{E}} = \varepsilon_0\varepsilon_r \vec{\mathcal{E}} + \vec{P}$ where $\vec{P}$ is the polarization field.
+\begin{equation}
+    \vec{P} = \varepsilon_0(\varepsilon_r - 1)\vec{\mathcal{E}}
+\end{equation}
+So it's like the additional response we got from the material reacting to the wave.
+\begin{equation}
+    \vec{P} = n_c \hat{p}
+\end{equation}
+We have $n_c$ density of dipoles and $\hat{p}$ microscopic ddipole moment. Essentially it measures how well the cahrges are aligned with the electric field.
+
+\paragraph{Magnetic strength field:} 
+\begin{equation}
+    \vec{H} = \frac{\vec{B}}{\mu}
+\end{equation}
+Where $\vec{B}$ is the magnetic induction field. This considers the material effect on the magnetic field. We can consider both electric and magnetic field as separate issues for their description. In the obsidian file there's the formula derivation, resulting in:
+\begin{equation}
+    \vec{\nabla} \wedge \vec{H} = \vec{\gamma} + \frac{\partial \vec{D}}{\partial t}
+\end{equation}
+This has consequences on the Drude's model, since it describes how the electric and magnetic field interact when current goes through a wire.
