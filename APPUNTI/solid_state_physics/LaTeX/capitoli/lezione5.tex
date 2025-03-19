@@ -1,0 +1,48 @@
+\section{19-03-25: | Electrical properties (Olivero)}
+
+Bands, electron states in crystals. This is mainly all we need to know. Bloch theorem which describes delocalized electrons in crystals. This plots the energy of the electron and the momentum (k which is also the k in $p=\hbar k$).
+
+What is interesting is that at almost 0°K we got all the electrons in the valence band. So in ideal conditions an insulator or something with a band gap do not let pass any current. But at room temperature, something passes.
+
+When talking about `free' charges, we refer to charges that move under the action of an Electrical field. The value of $n$ and $p$ are expressed in $[cm^{-3}]$, they are concentrations. 
+
+We will use the Fermi-Dirac statistical distribution for electrons. Quick recap: We have E on the x, and Probability function on the y. The form of this function depends on the $E_F$ Fermi's energy. It's the `Scalino Function'. Combining this with the DOS function we obtain that the $E_F$ is considered to be in the middle of the forbidden gap.
+
+The Fermi-Dirac is applied to states. If they do not exist in the forbidden gap, regardless of the distribution, we will not have electrons there. This statistic is the following:
+\begin{equation}
+    f(E) = \frac{1}{\exp\left[\frac{E - E_F}{kT}\right] + 1}
+\end{equation}
+\begin{equation}
+    g(E) = \text{DOS}
+\end{equation}
+\begin{equation}
+    g(E)f(E) = \text{Electrons per unit of Volume}
+\end{equation}
+We do not derive the $g(E)f(E)$, but let's just say we have a square root dependency on the energy. Just a side note, the $g(E)$ is already the product of the energy band and the $f(E)$.
+
+The important formulas we need to know are:
+
+\subsection{Charge carriers \& Doping}
+
+\begin{equation}
+    \left\{
+        \begin{aligned}
+            n^- = N_c \exp\left(\frac{E_F - E_C}{kT}\right) \\
+            p^+ = N_v \exp\left(\frac{E_V - E_F}{kT}\right) 
+        \end{aligned}
+    \right.
+\end{equation}
+$N_c$ are the actual states that can be occupied in the conduction band and there are about $10^{19}$ if them in a cubic cm, while we have $\sim 10^{22}$ atoms. This means that the actual free electrons are $10^{10}$ (from $f(E)g(E)$). This means that the free electrons generated from the doping ($\sim10^{14}$) make this intrinsic free electrons negligible. For Silicon additionally we know that the $E_g$ is 1.12eV.
+These are given from doping elements from the $III$ and the $VI$ element groups. This means that $n$ and $p$ are not equal, we will refer to $n_i$ as $n_i = n = p$, which in an intrinsic semiconductor: $n_i^2 = np$, since the product needs to be the same, by the `law of mass action' if one increases the other one decreases.
+
+\paragraph{Donors and Acceptors energy levels:} They are a little it higher and lower the conductive and valence band. They can help (thanks to heat) to make little jumps and complete the transition. ($VI$ close to conduction band, and $III$ close to valence band). The distances depend on the temperature! So an assumption we can make is that at room temperature (300K) we can use the `full ionization hypothesis' which says that all impurities are ionized, which means that $N_D = N_D^+$. \textcolor{red}{Remember:}
+\begin{equation}
+    1C\;1V = 1J
+\end{equation}
+\begin{equation}
+    1.6\cdot10^{-19}C\;1V = 1e1V = 1eV
+\end{equation}
+
+\paragraph{Majority and Minority carriers:} Usually $n_i^2 = 10^{20} cm^{-6}$, but by the law of mass etc, $pn = n_i^2$. And if from doping we have that $n$ for example $\sim10^{14}$, we have that the minority charge is $\sim10^{6}$. They are negligible. As well as the intrinsic $\sim10^{10}$ free electrons. In this case we can see as if the Energy levels gets closer to one of the bands. The degenerate doping is when we have so much doping that the semiconductor start behaving as a conductor (The Fermi's level is inside one of the bands, conduction I suppose).
+
+As a final note, we need \textit{`shallow'} levels and not \textit{`deep'} levels, so that get as close as possible to the conduction bands. And nothing (for now) beats Phosporous and Borum for Silicon. 
