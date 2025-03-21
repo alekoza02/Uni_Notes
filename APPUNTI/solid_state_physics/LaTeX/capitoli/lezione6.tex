@@ -1,0 +1,62 @@
+\section{21-03-25: | Drift \& Diffusion (Olivero)}
+
+These are the methods by which a charge can move thorugh a material. We have tre Drude model which we will not derive, but we know has as consequence (remember, same sign):
+\paragraph{Drude's Model:}
+\begin{equation}
+    v_{\text{drift}} \propto \mathcal{E}
+\end{equation}
+We introduce the mobility $\mu$, which is measured as $[\mu] = [v] / [\mathcal{E}] = cms^-1 / Vcm^{-1} = cm^2V^{-1}s^{-1}$: 
+\begin{equation}
+    v_{\text{drift, p}} = \mu_p \mathcal{E}
+\end{equation}
+\begin{equation}
+    v_{\text{drift, n}} = \mu_n \mathcal{E}
+\end{equation}
+We can introduce the current density $j$ as:
+\begin{equation}
+    J = i / S \rightarrow i = q / \Delta t 
+\end{equation}
+To write it with $v$:
+\begin{equation}
+    \begin{aligned}
+        j_{\text{drift, p}} = (+e)p v_{\text{drift, p}} = ep\mu_p\mathcal{E} = \sigma_p \mathcal{E}\\
+        j_{\text{drift, n}} = (-e)n v_{\text{drift, n}} = en\mu_n\mathcal{E} = \sigma_n \mathcal{E}
+    \end{aligned}
+\end{equation}
+Meaning that the total $j$ is:
+\begin{equation}
+    j_{\text{total}} = j_n + j_p
+\end{equation}
+This is not equal to 0, because the face the same direction (electrons are negative, so they generate a positive current in the opposite direction). The energy on the other hand changes as:
+\begin{equation}
+    E = (-e) V
+\end{equation}
+Since this energy can be seen as the energy levels, if they are not horizontal, the Fermi level will change as well (intrinsic Fermi level).
+
+\paragraph{Diffusion:} Another case is when we have a disparity of charge for whatever reason they try to diffuse to homogenise.
+\begin{equation}
+    j_{\text{diff.}} \propto -e D_p \partial p / \partial x = Acm^{-2} = C[D]cm^{-3}cm^{-1} \rightarrow [D] = cm^4C^{-1}Cs^{-1}cm^{-2} = cm^2s^{-1}
+\end{equation}
+So the concentration is negative since we go from a place with lots of holes into a place with low holes. That's why we have the  ``-", it's beacuse the current goes into the opposite direction of the gradient. Also he have the Diffusion parametere that tells us (based on the material analyzed) how easy the electrons or holes move.
+If they are 0, we are in intrinsic semiconductor with no diffusion.
+
+If the concentration of carriers is not constant, the distance between a band and Fermi level will not be constant. We also have a relation between $\mu$ and $D$:
+\begin{equation}
+    D = \frac{kT\mu}{e}
+\end{equation} 
+
+\subsection{PN Junction}
+We have lot of positive charge carriers and low negative charge carriers, but overall the piece of semiconductor is neutral, since the electrons are bounded to their atoms. The same things goes for bot donors and acceptors.
+
+If we put them together a depletion zone generates, where free holes and free electrons recombine, leaving only fixed charges. Thi generates a built-in electrical field pointing from positive to negative zone.
+
+Also, if we are in equilibrium, the ferm levels are horizontal. Now the difficult thing is to describe what happens in the juntion. The point is that indipendetely of the charge carrier, when they move the overall current goes into one direction, from high density to low density.
+
+If intereseted, the built-in votlage is:
+\begin{equation}
+    V_{bi} = \frac{kT}{e} \ln\left(\frac{N_DN_A}{n^2}\right)
+\end{equation}
+The approximation called 'sharp junction approximation' describes in a sharp way the total gharge across the junction. In this course is not done, but its possible to calculate where does the depletion zone ends for both parts.
+\begin{equation}
+    x_n = \sqrt{\frac{2\varepsilon_0\varepsilon_r V_{bi}}{eN_D\left(1+\frac{N_D}{N_A}\right)}}
+\end{equation}
