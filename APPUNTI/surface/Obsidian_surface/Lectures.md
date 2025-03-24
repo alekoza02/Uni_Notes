@@ -8,3 +8,6 @@
 
 [[Lecture 5 19-03-25]]  slide 02, 03
 
+[[Lecture 6--missing]]    slide 04
+
+[[Lecture 7 24-04-25]]   slide 04

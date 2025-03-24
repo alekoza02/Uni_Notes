@@ -11,14 +11,12 @@
             "id": "31c5db2bb9bfc638",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Lecture 6 21-03-25.md",
-                "mode": "source",
-                "source": false
+                "file": "Pasted image 20250313105013.png"
               },
-              "icon": "lucide-file",
-              "title": "Lecture 6 21-03-25"
+              "icon": "lucide-image",
+              "title": "Pasted image 20250313105013"
             }
           }
         ]
@@ -78,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "ab322b4b256e0db5",
@@ -171,6 +168,11 @@
   },
   "active": "31c5db2bb9bfc638",
   "lastOpenFiles": [
+    "Lecture 7 24-03-25.md",
+    "Lecture 4 17-03-25.md",
+    "Lecture 5 19-03-25.md",
+    "Lecture 6 21-03-25.md",
+    "Lectures.md",
     "06_3.jpg",
     "06_1.jpg",
     "06_6.jpg",
@@ -181,13 +183,8 @@
     "06_8.jpg",
     "06_9.jpg",
     "06_10.jpg",
-    "06_12.jpg",
-    "Lecture 5 19-03-25.md",
-    "Lecture 6 21-03-25.md",
-    "Lectures.md",
     "Lecture 1 10-03-25.md",
     "Lecture 2 12-03-25.md",
-    "Lecture 3 13-03-25.md",
-    "Lecture 4 17-03-25.md"
+    "Lecture 3 13-03-25.md"
   ]
 }
