@@ -86,3 +86,91 @@ The main takeaway is that the electromagnetic wave equation in materials differs
 ---
 
 This concludes the first part of the lecture. The second part will further explore the solution to the wave equation and how materials interact with electromagnetic waves at different frequencies.
+
+**Electromagnetic Waves in Materials - Part 2**
+
+### Wave Equation in Materials
+
+Starting from Maxwell's equations, we derive the wave equation in materials. The fundamental constants involved are:
+
+- $ε_0$(electric permittivity of free space)
+    
+- $μ_0$(magnetic permeability of free space)
+    
+- $σ$ (electrical conductivity of the material)
+    
+
+By collecting terms, we arrive at the wave equation:
+
+
+$$(σ / ε_0) * (∂E / ∂t) + ε_r * (∂²E / ∂t²) = ∇²E$$
+
+
+This equation accounts for material properties such as polarization and conductivity.
+
+Effects of Material Polarization
+
+In materials, microscopic charges influence wave propagation. The dielectric constant $ε_r$ represents the material's polarizability, modifying the wave equation compared to vacuum. Polarization effects lead to:
+
+- **Reorientation of dipoles**, affecting wave behavior.
+    
+- **Two types of electrons**:
+    
+    - Bound electrons (localized in orbitals, contributing to polarization)
+        
+    - Free electrons (participating in electrical conduction, responding to electromagnetic waves)
+        
+
+### Conductivity and Electron Motion
+
+In conductive materials:
+
+- Free electrons oscillate due to the alternating electric field.
+    
+- Bound electrons deform charge distributions, forming dipoles aligned with the field.
+    
+- Conductivity is primarily determined by free electron behavior.
+    
+
+### Solving the Wave Equation
+
+Assuming a plane wave solution:
+
+
+$$E(x,t) = E_0 e^{i(kx - \omega t)}$$
+
+
+Substituting into the wave equation leads to the dispersion relation:
+
+
+$$k^2 = (ω² / c²) * (ε_r + i(σ / ε_0ω))$$
+
+This describes how waves propagate in a medium, incorporating both dielectric response and absorption due to conductivity.
+
+### Speed of Light in Materials
+
+From the dispersion relation, the phase velocity in the material is given by:
+
+
+$$v = \frac{c}{\sqrt{ε_r + i(σ / ε_0ω)}}$$
+
+
+The refractive index is then:
+
+
+$$n = \sqrt{ε_r + i(σ / ε_0ω)}$$
+
+
+This shows that the refractive index is complex, where the imaginary part accounts for absorption.
+
+### Conclusion
+
+By modifying Maxwell’s equations for a material, we derive the wave equation incorporating conductivity and polarization effects. This leads to:
+
+- A complex refractive index representing both propagation and absorption.
+    
+- Distinct contributions from free and bound electrons.
+    
+- A general understanding of wave behaviour in conductive and dielectric materials.
+    
+
