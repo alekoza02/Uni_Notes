@@ -1,0 +1,62 @@
+\section{25-03-25: Direct \& Reverse bias | (Olivero)}
+
+\textit{Recap of the last lecture.}
+
+\paragraph{Biased junction:} Remember that we use a coordinate system where we apply +1V from the source to the p part first thus reducing the $\Delta V$ in the junction.
+
+So when we apply a POSITIVE voltage, the BIAS voltage will DECREASE: $V_{bi} \rightarrow V_{bi} - V$, so that the $\Delta V$ will diminuish. The opposite will happen changing a sign or the origin of the voltage.
+
+\paragraph{Capacitance:} We can measure the electrical capacitance: let's say we are in an asymmetrical doping, so that $N_A \gg N_D \rightarrow N_D / N_A \ll 1$. By mantaining the charge neutrality, $x_p \ll x_n$. This will change the triangle plot, by changing the size of each zone. It will reduce the $x_p$ region and/or enlarge the $x_n$ zone.
+
+Now, remember the formula for the capacitance for 2 planes:
+\begin{equation}
+    C = \frac{Q}{V} \qquad \text{More general definition} \; \rightarrow \qquad C = \frac{\partial Q(V)}{\partial V}  
+\end{equation}
+So lets start from the charge Q:
+\begin{equation}
+    Q = \underbrace{(eN_D)}_{vol. \; density} \;\cdot \underbrace{\underbrace{S}_{surface} \cdot \underbrace{\sqrt{2eN_D \varepsilon_0\varepsilon_r ( V_{bi} + V)}}_{width}}_{volume}
+\end{equation}
+
+\begin{equation}
+    C = \underbrace{S \cdot \sqrt{\frac{eN_D\varepsilon_0\varepsilon_r}{2(V + V_{bi})}}}_{derivative\;of\;Q}
+\end{equation}
+We can at the end linearize the formula by plotting $1/C^2$ instead of $C$, getting us something like:
+\begin{equation}
+    \frac{1}{C^2} = aV + b
+\end{equation}
+This lets us know the value experimentally $N_D$ from $a$:
+\begin{equation}
+    N_D = \frac{2}{S^2e\varepsilon_0\varepsilon_rQ}
+\end{equation}
+Once we have $N_D$, we also can determine $b$, which is the $V_{bi}$.
+
+\paragraph{Applied V:} What happens when we apply a voltage to the junction?
+\begin{equation}
+    V_{bi} - V = \frac{k_BT}{e}\ln\left(\frac{p_{p}}{p_{n}}\right)
+\end{equation}
+Notice that we don't have $p_{p0}$ and $n_{n0}$, because we are not in initial conditions. What will happen is that the amount of holes in $x_n$ will increase the lower the $\Delta V$ gets.
+In this conditions we can say that the concentration of $p_{p0}$ and $p_{p}$ is almost equal, but there's a big change in $p_n$.
+
+\paragraph{Weak injection conditions:} 
+\begin{equation}
+    p_n = p_{n0}\underbrace{\exp\left(\frac{eV}{k_BT}\right)}_{V>0\; \rightarrow\; ris<1}
+\end{equation}
+
+\begin{itemize}
+    \item Reverse bias: $p_n < p_{n0}$ 
+    \item Direct bias: $p_n > p_{n0}$
+\end{itemize}
+Far from the depletion zone, we have only diffusion at equilibrium.
+
+\paragraph{Continuity equation:} 
+To describe the current that passes in direct bias near the depletion zone we use the continuity equation:
+\begin{equation}
+    \frac{\partial p_p}{\partial t} + \frac{\partial j_p}{\partial x} = - q U
+\end{equation}
+Where $U$ is the net recombination rate. Normally it is 0, but in direct bias the generation has an additional term:
+\begin{equation}
+    G_{new} = G +\Delta G
+\end{equation}
+Which are the carriers moved in from the $\Delta V$.
+
+\paragraph{Diffusion Lenght $L_P$:} Obsidian files.
