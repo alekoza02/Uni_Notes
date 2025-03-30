@@ -1,0 +1,39 @@
+\section{28-03-25: Continuation on depletion zones | (Olivero)}
+
+When talking about the net recombination rate, we must always remember that:
+\begin{equation}
+    U_p = U_n
+\end{equation}
+Doesn't matter if we are in equilibrium or not, this is due to the charge neutrality, an electron cannot disappear without rcombining with a hole.
+
+So even if the different diffusion currents are not constant, the total current is. We can consider constant the current in the depletion region. This is because the width of the depletion region is extremely narrow (2 orders of magnitude) respect to the exponential decay, so it doesn't change that much. This effect is called transparency of the deplation region (respect to the transfer of external charges). We can check that by doing the substitutions in the $j_{\text{diff.}}$ at the one of the limits of the depletion zone.
+
+By exploiting this thing, we can calculate the remaining diffusion current for the other charge carrier and obtain our results. Obtaining:
+
+\begin{equation}
+    i(V) = i_o \left[e^{\frac{eV}{kT}} - 1\right]
+\end{equation}
+From this equation we can calculate the $D_p$ and $D_n$.
+
+\subsection{Differences between direct and indirect band gap}
+\dots
+\subsection{Introduction of Shockley-Read-Hall theory}
+This is based on the concept of traps that are found at mid-band level, they can generate both holes and electrons (based on the POV).
+We start by the fact that most probably the $R_n \propto n$, but also a term refered to the density of traps charged such that they can accept an electron or hole: $R_n \propto n \cdot N_T^+$. The final result has a proportional factorthat contains the probability of trapping an electron per unit of concentration:
+\begin{equation}
+    R_n = r_n \cdot n \cdot N_T^+
+\end{equation}
+\begin{equation}
+    G_n = g_n \cdot N_T^0
+\end{equation}
+We don't care about the concentration, because since we have virtually infinite amount of concentration of holes where to put the electron generated, it will not anyhow impact the generation rate.
+\begin{equation}
+    R_p = r_p \cdot p \cdot N_T^0
+\end{equation}
+\begin{equation}
+    G_p = g_p \cdot N_T^+
+\end{equation}
+The probability of finding $N_T$ neutral or positive will depend on $E_T$, which will depend on the Fermi-Dirac distribution. So:
+\begin{equation}
+    N_T^0 = N_T \cdot f_{\text{FD}}(E_T)
+\end{equation}
