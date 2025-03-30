@@ -5,5 +5,5 @@
 [[Lecture 5 19-03-25]]
 [[Lecture 6 21-03-25]]
 [[Lecture 7 24-03-25]]
-[[Lecture 8 26-03-25]] (Forneris)
-[[Lecture 9 26-03-25]] (Olivero)
+[[Lecture 8 26-03-25]] 
+[[Lecture 9 28-03-25]]
