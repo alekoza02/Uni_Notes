@@ -1,0 +1,65 @@
+\section{03-04-25: | SRH (Olivero)}
+
+Thorugh traps level some jumps can occour. We can talk about the rate at which a certain number of trap events happen in a certain $\Delta t$.
+\begin{equation}
+    R_n = r_nnN_T^+
+\end{equation}
+To better express $r_n$ we can use some microscopic parameters as it follows: ome electron in the crystal with a certain concentration of positive trap levels $N_T^+$.
+We can describe a probability in terms of a surface area, called $\sigma [cm^2]$. We can also say that the electron has a certain speed due to the thermal excitation. In addition we introduce a $\tau_{tap}$ which it the mean time that an electron can move before getting caught by a trap.
+\begin{equation}
+    v_{th} \cdot \tau_{trap} = l
+\end{equation}
+\begin{equation}
+    V_{cil} = \sigma \cdot l
+\end{equation}
+\begin{equation}
+    N_T^+ = \frac{1}{\sigma \cdot l}
+\end{equation}
+Since a rate is definied as objects per second:
+\begin{equation}
+    R_n = \frac{1}{\tau_{trap}}n
+\end{equation}
+\begin{equation}
+    R_n = \sigma_{trap} v_{th} N_T^+ n
+\end{equation}
+\begin{equation}
+    R_n = r_n N_T^+ n
+\end{equation}
+Remember that:
+\begin{equation}
+    N_T = N_T^0 + N_T^+
+\end{equation}
+And each one of these terms is enabling to just on type of carriers. 
+
+\paragraph{Fermi-Dirac:} We should also add the contribuition of the Fermi-Dirac distribuition at a certain energy (the traps one).
+\begin{equation}
+    R_n = r_n N_T (1-\underbrace{f}_{f_{FD}(E_T)}) n
+\end{equation}
+We also want to condense the first two terms:
+\begin{equation}
+    \underbrace{v_{th}\sigma_{trap}}_{r_n}N_T = \frac{1}{\tau_n}
+\end{equation}
+Which is very similar to the $\tau_{trap}$, the only difference is that we consider all types of traps. And this is given from the $f$ term.
+So the $\tau_{n}$ is an absolute value, not depending from the Fermi level, while $\tau_{trap}$ is $\tau_{n}$ to which $f$ was applied.
+
+We can make the same thought process for the other rates (holes and electrons from both VB and CV). We than unite them obtaining an hilarious series of $\frac{1}{\tau}f_{np}$. Derivation in Obsidian files.
+
+\subsection{Final Formula}
+\begin{equation}
+    U = \frac{pn - n_i^2}{\tau_p (n+n_T) \tau_n (p+p_T)}
+\end{equation}
+But if we know that in a $pn$ junction we have the following, and in this case they are similar:
+\begin{equation}
+    U = \frac{\Delta p}{\tau}
+\end{equation}
+\begin{equation}
+    n_{n0} = N_D \qquad \qquad p_{n0} = \frac{n_i^2}{N_{n0}} = \frac{n_i^2}{N_D}
+\end{equation}
+\begin{equation}
+    p_n = p_{n0} + \Delta p \qquad \qquad \underbrace{n_n \simeq n_{n0}}_{\text{Weak injection}} = N_D
+\end{equation}
+So we can rewrite $U$ as (many terms $\sim 0$ because $N_D \gg n_i$):
+\begin{equation}
+    U = \frac{\Delta p}{\tau_p}
+\end{equation}
+Which was the initial expression, that approximates the diffusion current of the carriers.
